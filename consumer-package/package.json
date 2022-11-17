@@ -1,0 +1,13 @@
+{
+  "name": "consumer-package",
+  "main": "index.js",
+  "dependencies": {
+    "wasm-package": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "test": "tsc -p ."
+  }
+}

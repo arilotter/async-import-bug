@@ -1,0 +1,10 @@
+{
+  "name": "wasm-package",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "module": "bindings.js",
+  "main": "bndings.js",
+  "types": "bindings.d.ts"
+}

@@ -1,0 +1,1 @@
+export * from "./bindings_bg.js";
