@@ -1,11 +1,11 @@
-const x = 0 as any;
 async function main() {
-  type Wasm = Awaited<typeof import("wasm-package")>;
-  type WasmMatch = Wasm["WasmMatch"];
+  const p = await import("wasm-package");
 
-  const package = await import("wasm-package");
-  const match = new package.WasmMatch(x, x, x, x, x, x, x, x, x);
-  const typeAsserted: WasmMatch = match;
+  // uncomment the below to fix
+  // await (p as any).__tla
+
+  // fails
+  p.install_panic_logger()
 }
 
 main();
